@@ -140,11 +140,11 @@ and files.
         WSGI app 0 (mountpoint='/') ready in 1 seconds on interpreter 0x5615894a69a0 pid: 8827 (default app)
 
     If any errors occurred, you will need to correct them. If you get a
-    ``callable not found or import error``, make sure you your ``--mount /=wsgi:app``
-    matches the ``app`` symbol in the ``wsgi.py`` file. An import
-    error that looks like ``ImportError: No module named 'wsgi'`` probably
-    indicates a mismatch in your --mount arguments. Any other import errors
-    probably means that the package it's failing to import either is not
+    ``callable not found or import error``, make sure your 
+    ``--mount /=wsgi:app`` matches the ``app`` symbol in the ``wsgi.py`` file.
+    An import error that looks like ``ImportError: No module named 'wsgi'``
+    probably indicates a mismatch in your --mount arguments. Any other import
+    errors probably means that the package it's failing to import either is not
     installed or is not accessible by the user. That's why we chose to
     masquerade as the normal user that you log in as, so you would for sure
     have access to installed packages.
